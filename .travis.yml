@@ -1,0 +1,16 @@
+sudo: required
+
+services:
+  - docker
+
+env:
+  global:
+    - DOCKER_REPO=jasondewitt/roxet.net
+
+script:
+  - export TAG=$(if [[ $TRAVIS_PULL_REQUEST == "false" ]] && [[ $TRAVIS_BRANCH == "master" ]]; then echo "latest"; else echo $TRAVIS_PULL_REQUEST_BRANCH; fi)
+  - docker build -t $DOCKER_REPO:$TAG -f Dockerfile .
+
+after_success:
+  - docker login -u $DOCKER_USER -p $DOCKER_PASSWORD
+  - docker push $DOCKER_REPO:$TAG
