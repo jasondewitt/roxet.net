@@ -4,7 +4,7 @@ services:
   - docker
 
 script:
-  - export TAG=$(if [[ $TRAVIS_PULL_REQUEST == "false" ]] && [[ $TRAVIS_BRANCH == "master" ]]; then echo "latest"; else echo $TRAVIS_PULL_REQUEST_BRANCH; fi)
+  - export TAG=$(if [[ $TRAVIS_PULL_REQUEST == "false" ]] && [[ $TRAVIS_BRANCH == "master" ]]; then echo "latest"; else echo $TRAVIS_TAG; fi)
   - docker build -t jasondewitt/roxet.net:$TAG -f Dockerfile .
 
 after_success:
