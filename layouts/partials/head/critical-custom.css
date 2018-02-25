@@ -1,0 +1,38 @@
+a {
+    cursor: pointer;
+    color: #ff9800;
+    text-decoration: none;
+    border-bottom: 1px solid #ff9800
+}
+
+a:hover {
+    background-color: #ff9800;
+    color: #fff
+}
+
+nav a.active {
+    background-color: #ff9800;
+    color: #ffff;
+}
+
+.dark h1 a, .dark h2 a, .dark h3 a, .dark h4 a, .dark h5 a {
+    color: #ff9800;
+}
+
+.dark h1 a:hover, .dark h2 a:hover, .dark h3 a:hover, .dark h4 a:hover, .dark h5 a:hover {
+    color: #fff;
+}
+
+article [itemprop="description"] {
+    margin-bottom: 20px;
+    margin-top: 5px;
+}
+.hack blockquote, .hack h1, .hack ol, .hack p, .hack ul {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.hack h2, .hack h3, .hack h4, .hack h5, .hack h6 {
+    position: relative;
+    margin-bottom: 1px;
+}

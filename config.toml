@@ -1,0 +1,40 @@
+baseURL = "/"
+languageCode = "en-us"
+title = "sudo science"
+
+theme = "afterdark"
+theme_variant = "dark"
+description = "the infrequently updated personal website of Jason DeWitt"
+Paginate = 10
+
+enableRobotsTXT = true
+SectionPagesMenu = "main"
+footnoteREturnLinkContents = "↩"
+[Params]
+  RSSLink = "/index.xml"
+  hideauthor = true
+  github = "https://github.com/jasondewitt" # add your github profile name
+  twitter = "https://twitter.com/jasondewitt" # add your twitter profile
+#  email = "myemail@myaddress.xxx"
+  powered_by = false
+
+[[menu.main]]
+    name = "Home"
+    weight = -100
+    identifier = "home"
+    url = "/"
+[[menu.main]]
+    name = "Posts"
+    weight = 2
+    url = "/post/"
+    identifier = "post"
+[[menu.main]]
+    name = "Codes"
+    weight = 3
+    url = "/code/"
+    identifier = "code"
+[[menu.main]]
+    name = "About"
+    weight = 200
+    identifier = "about"
+    url = "/about/"
