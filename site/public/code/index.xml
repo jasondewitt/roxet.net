@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Codes on sudo science</title>
+    <link>/code/</link>
+    <description>Recent content in Codes on sudo science</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 12 Feb 2017 10:28:09 -0600</lastBuildDate>
+    
+	<atom:link href="/code/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>cloudflare</title>
+      <link>/code/cloudflare/</link>
+      <pubDate>Sun, 12 Feb 2017 10:28:09 -0600</pubDate>
+      
+      <guid>/code/cloudflare/</guid>
+      <description>hello</description>
+    </item>
+    
+  </channel>
+</rss>
