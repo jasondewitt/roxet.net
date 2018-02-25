@@ -8,5 +8,5 @@ script:
   - docker build -t jasondewitt/roxet.net:$TAG -f Dockerfile .
 
 after_success:
-  - docker login -u $DOCKER_USER -p $DOCKER_PASSWORD
+  - docker login -u $DOCKER_USER -p $DOCKER_PASS
   - docker push jasondewitt/roxet.net:$TAG
